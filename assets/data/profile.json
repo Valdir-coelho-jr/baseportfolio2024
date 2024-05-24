@@ -6,28 +6,7 @@
   "phone": "(21) 98765-4321",
   "email": "alice.silva@email.com",
   "skills": {
-    "hardSkills": [
-      {
-        "name": "Python",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/python.png"
-      },
-      {
-        "name": "JavaScript",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/javascript.png"
-      },
-      {
-        "name": "React",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
-      },
-      {
-        "name": "SQL",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/sql.png"
-      },
-      {
-        "name": "AWS",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/aws.png"
-      }
-    ],
+    "hardSkills": ["Python", "JavaScript", "React", "SQL", "AWS"],
     "softSkills": [
       "Comunicação",
       "Trabalho em equipe",
