@@ -1,0 +1,64 @@
+{
+  "name": "Alice Silva",
+  "photo": "https://site112.com/i/lipsum-images/large/image-lorem-face-6474.jpg",
+  "job": "Desenvolvedora Full Stack",
+  "location": "Rio de Janeiro - RJ",
+  "phone": "(21) 98765-4321",
+  "email": "alice.silva@email.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "Python",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/python.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/javascript.png"
+      },
+      {
+        "name": "React",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+      },
+      {
+        "name": "SQL",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/sql.png"
+      },
+      {
+        "name": "AWS",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/aws.png"
+      }
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Trabalho em equipe",
+      "Resolução de problemas",
+      "Criatividade",
+      "Adaptabilidade"
+    ]
+  },
+  "languages": ["Português BR", "Inglês (fluente)", "Espanhol (básico)"],
+  "portfolio": [
+    {
+      "name": "Projeto de E-commerce",
+      "url": "https://github.com/AliceSilva/ecommerce-project",
+      "github": true
+    },
+    {
+      "name": "Aplicativo de Tarefas",
+      "url": "https://github.com/AliceSilva/task-app",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Desenvolvedora Full Stack / Empresa XYZ",
+      "period": "2020 - até o momento",
+      "description": "Desenvolvimento e manutenção de aplicações web e mobile utilizando tecnologias como Python, React e AWS."
+    },
+    {
+      "name": "Estagiária de Desenvolvimento / Empresa ABC",
+      "period": "2019 - 2020",
+      "description": "Participação em projetos de desenvolvimento de software utilizando JavaScript e SQL."
+    }
+  ]
+}
