@@ -25,7 +25,6 @@ function updateSoftSkills(profileData) {
 function updateHardSkills(profileData) {
   const hardSkillsList = document.getElementById("profile.skills.hardSkills");
 
-  // Limpa a lista de hard skills antes de adicionar novos itens
   hardSkillsList.innerHTML = "";
 
   profileData.skills.hardSkills.forEach((skill) => {
@@ -34,7 +33,6 @@ function updateHardSkills(profileData) {
     skillsIcon.classList.add("skillsIcon");
     const icon = document.createElement("i");
 
-    // Define a classe do ícone do Font Awesome
     switch (skill.name) {
       case "Python":
         icon.classList.add("fa-brands", "fa-python");
@@ -52,16 +50,30 @@ function updateHardSkills(profileData) {
         icon.classList.add("fa-brands", "fa-aws");
         break;
       default:
-        // Se a skill não tiver um ícone definido, exibe o nome da skill como texto
         skillsIcon.textContent = skill.name;
     }
 
-    // Adiciona o ícone ao elemento skillsIcon
     skillsIcon.appendChild(icon);
-    // Adiciona o elemento skillsIcon à lista
     li.appendChild(skillsIcon);
-    // Adiciona o elemento li à lista de hard skills
     hardSkillsList.appendChild(li);
+  });
+}
+
+function updateLanguages(profileData) {
+  const languagesList = document.getElementById("profile.languages");
+  languagesList.innerHTML = ""; // Limpa a lista
+
+  profileData.languages.forEach((language) => {
+    const languageItem = document.createElement("li");
+    const icon = document.createElement("i");
+    icon.classList.add("fa-regular", "fa-circle-check");
+
+    // Crie o elemento de texto e adicione à lista
+    const languageText = document.createTextNode(language);
+    languageItem.appendChild(icon);
+    languageItem.appendChild(languageText);
+
+    languagesList.appendChild(languageItem);
   });
 }
 
@@ -70,4 +82,5 @@ function updateHardSkills(profileData) {
   updateProfileInfo(profileData);
   updateHardSkills(profileData);
   updateSoftSkills(profileData);
+  updateLanguages(profileData);
 })();
