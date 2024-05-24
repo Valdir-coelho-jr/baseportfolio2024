@@ -1,12 +1,12 @@
 {
   "name": "Valdir C. Junior",
   "photo": "https://avatars.githubusercontent.com/u/118737424?v=4",
-  "job": "Desenvolvedora Full Stack",
-  "location": "Rio de Janeiro - RJ",
-  "phone": "(21) 98765-4321",
-  "email": "alice.silva@email.com",
+  "job": "Desenvolvedor Full Stack",
+  "location": "Sorocaba - SP",
+  "phone": "(15) 99708-2624",
+  "email": "N/A",
   "skills": {
-    "hardSkills": ["Python", "JavaScript", "React", "SQL", "AWS"],
+    "hardSkills": ["PHP", "JavaScript", "React", "SQL"],
     "softSkills": [
       "Comunicação",
       "Trabalho em equipe",
@@ -15,29 +15,19 @@
       "Adaptabilidade"
     ]
   },
-  "languages": ["Português BR", "Inglês (fluente)", "Espanhol (básico)"],
+  "languages": ["Português BR", "Inglês (fluente)"],
   "portfolio": [
     {
-      "name": "Projeto de E-commerce",
-      "url": "https://github.com/AliceSilva/ecommerce-project",
-      "github": true
-    },
-    {
-      "name": "Aplicativo de Tarefas",
-      "url": "https://github.com/AliceSilva/task-app",
+      "name": "Pokedex",
+      "url": "https://github.com/Valdir-coelho-jr/pokedex",
       "github": true
     }
   ],
   "professionalExperience": [
     {
-      "name": "Desenvolvedora Full Stack / Empresa XYZ",
-      "period": "2020 - até o momento",
-      "description": "Desenvolvimento e manutenção de aplicações web e mobile utilizando tecnologias como Python, React e AWS."
-    },
-    {
-      "name": "Estagiária de Desenvolvimento / Empresa ABC",
-      "period": "2019 - 2020",
-      "description": "Participação em projetos de desenvolvimento de software utilizando JavaScript e SQL."
+      "name": "Full Stack Developer - Freelancer",
+      "period": "2023 - até o momento",
+      "description": "Desenvolvimento e manutenção de aplicações web utilizando tecnologias como Javascript, Reactjs e PHP."
     }
   ]
 }
