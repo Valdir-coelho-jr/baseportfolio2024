@@ -32,9 +32,9 @@ function updateHardSkills(profileData) {
     skillsIcon.classList.add("skillsIcon");
     const icon = document.createElement("i");
 
-    switch (skill.name) {
+    switch (skill) {
       case "PHP":
-        icon.classList.add("fa-brands", "fa-php"); // Adicione o ícone do PHP
+        icon.classList.add("fa-brands", "fa-php");
         break;
       case "JavaScript":
         icon.classList.add("fa-brands", "fa-square-js");
@@ -46,7 +46,7 @@ function updateHardSkills(profileData) {
         icon.classList.add("fa-solid", "fa-database");
         break;
       default:
-        skillsIcon.textContent = skill.name;
+        skillsIcon.textContent = skill; // Se o skill não for reconhecido, apenas mostra o texto
     }
 
     skillsIcon.appendChild(icon);
