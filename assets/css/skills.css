@@ -1,0 +1,43 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .hardSkills ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills .skillsIcon {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.skills .softSkills ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.skills .softSkills ul li {
+  margin-left: 2rem;
+  padding: .5rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

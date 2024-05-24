@@ -1,0 +1,16 @@
+
+.experience {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience li {
+  margin-bottom: 1rem;
+}
+
+.experience .date i {
+  padding-right: .5rem;
+}
