@@ -77,10 +77,47 @@ function updateLanguages(profileData) {
   });
 }
 
+function updatePortfolio(profileData) {
+  const portfolio = document.getElementById("profile.portfolio");
+  portfolio.innerHTML = profileData.portfolio
+    .map((project) => {
+      return `<h3 ${project.github ? 'class="github"' : ""}>${project.name}</h3>
+    <a href="${
+      project.url
+    }" target="_blank"><i class="fa-brands fa-github"></i> ${project.url}</a>
+    `;
+    })
+    .join("");
+}
+
+function updateProfessionalExperience(profileData) {
+  const ProfessionalExperience = document.getElementById("");
+
+  ProfessionalExperience.innerHTML = profileData.ProfessionalExperience.map(
+    (experience) => {
+      return `
+    <li>
+    <h3 class="title">
+      ${experience.name}
+    </h3>
+    <p class="date">
+      <i class="fa-solid fa-calendar-days"></i>${experience.period}
+    </p>
+    <p>
+      ${experience.description}
+    </p>
+  </li>
+    `;
+    }
+  ).join("");
+}
+
 (async () => {
   const profileData = await fetchProfileData();
   updateProfileInfo(profileData);
   updateHardSkills(profileData);
   updateSoftSkills(profileData);
   updateLanguages(profileData);
+  updatePortfolio(profileData);
+  updateProfessionalExperience(profileData);
 })();
