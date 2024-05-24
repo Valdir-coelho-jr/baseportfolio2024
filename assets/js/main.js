@@ -24,7 +24,6 @@ function updateSoftSkills(profileData) {
 
 function updateHardSkills(profileData) {
   const hardSkillsList = document.getElementById("profile.skills.hardSkills");
-
   hardSkillsList.innerHTML = "";
 
   profileData.skills.hardSkills.forEach((skill) => {
@@ -34,8 +33,8 @@ function updateHardSkills(profileData) {
     const icon = document.createElement("i");
 
     switch (skill.name) {
-      case "Python":
-        icon.classList.add("fa-brands", "fa-python");
+      case "PHP":
+        icon.classList.add("fa-brands", "fa-php"); // Adicione o ícone do PHP
         break;
       case "JavaScript":
         icon.classList.add("fa-brands", "fa-square-js");
@@ -45,9 +44,6 @@ function updateHardSkills(profileData) {
         break;
       case "SQL":
         icon.classList.add("fa-solid", "fa-database");
-        break;
-      case "AWS":
-        icon.classList.add("fa-brands", "fa-aws");
         break;
       default:
         skillsIcon.textContent = skill.name;
